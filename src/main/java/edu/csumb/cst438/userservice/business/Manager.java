@@ -16,4 +16,8 @@ public class Manager{
     public List<User> getUserList(){
         return userDbClient.getAll();
     }
+
+    public User validate(User payload) {
+        return userDbClient.validate(payload);
+    }
 }
